@@ -21,7 +21,13 @@ namespace YahooTests
             LoginPage.GoTo();
             LoginPage.LoginAs("username").WithPassword("password").Login();
 
-            //Assert.IsTrue(EmailPage.IsAt, "Failed to Login.");
+            Assert.IsTrue(EmailPage.IsAt, "Failed to Login.");
+        }
+
+        [TestCleanup]
+        public void Cleanup()
+        {
+            Driver.Close(); 
         }
     }
 }

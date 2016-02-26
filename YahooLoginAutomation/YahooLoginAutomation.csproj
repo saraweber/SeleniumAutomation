@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="EmailPage.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

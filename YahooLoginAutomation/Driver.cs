@@ -17,5 +17,10 @@ namespace YahooLoginAutomation
             Instance = new ChromeDriver();
             Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
         }
+
+        public static void Close()
+        {
+            Instance.Close();
+        }
     }
 }
